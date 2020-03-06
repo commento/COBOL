@@ -21,7 +21,11 @@ WORKING-STORAGE SECTION.
 
 PROCEDURE DIVISION.
 Begin.
-	PERFORM ValidateDate UNTIL ValidCodeSupplied.
+	*>Added This because otherwise the ACCEPT part was not running to be verified why
+	DISPLAY "Enter a validation return code (0-8) " WITH NO ADVANCING
+	ACCEPT ValidationReturnCode.
+	*>--------------------------------------------------
+	PERFORM ValidateDate UNTIL ValidCodeSupplied
 	EVALUATE ValidationReturnCode
 		WHEN	0	SET DateIsOk		TO TRUE
 		WHEN	1	SET DateNotNumeric	TO TRUE
@@ -43,5 +47,5 @@ Begin.
 	STOP RUN.
 
 ValidateDate.
-	DISPLAY "Enter a validation return code (0-8) " WITH NO ADVANCING.
+	DISPLAY "Enter a validation return code (0-8) " WITH NO ADVANCING
 	ACCEPT ValidationReturnCode.
