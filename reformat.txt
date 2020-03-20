@@ -1,0 +1,49 @@
+               VALUE "ALALABAMA       MONTGOMERY    AKALASKA        JUNEAU".
+           03  FILLER PIC X(60)
+               VALUE "AZARIZONA       PHOENIX       ARARKANSAS      LITTLE ROCK".
+           03  FILLER PIC X(60)
+               VALUE "CACALIFORNIA    SACRAMENTO    COCOLORADO      DENVER".
+           03  FILLER PIC X(60)
+               VALUE "CTCONNECTICUT   HARTFORD      DEDELAWARE      DOVER".
+           03  FILLER PIC X(60)
+               VALUE "FLFLORIDA       TALLAHASSE    GAGEORGIA       ATLANTA".
+           03  FILLER PIC X(60)
+               VALUE "HIHAWAII        HONOLULU      IDIDAHO         BOISE".
+           03  FILLER PIC X(60)
+               VALUE "ILILLINOIS      SPRINGFIELD   ININDIANA       INDIANAPOLIS".
+           03  FILLER PIC X(60)
+               VALUE "IAIOWA          DES MOINES    KSKANSAS        TOPEKA".
+           03  FILLER PIC X(60)
+               VALUE "KYKENTUCKY      FRANKFORT     LALOUISIANA     BATON ROUGE".
+           03  FILLER PIC X(60)
+               VALUE "MEMAINE         AUGUSTA       MDMARYLAND      ANNAPOLIS".
+           03  FILLER PIC X(60)
+               VALUE "MAMASSACHUSETTS BOSTON        MIMICHIGAN      LANSING".
+           03  FILLER PIC X(60)
+               VALUE "MNMINNESOTA     SAINT PAUL    MSMISSISSIPPI   JACKSON".
+           03  FILLER PIC X(60)
+               VALUE "MOMISSOURI      JEFFERSON CITYMTMONTANA       HELENA".
+           03  FILLER PIC X(60)
+               VALUE "NENEBRASKA      LINCOLN       NVNEVADA        CARSON CITY".
+           03  FILLER PIC X(60)
+               VALUE "NHNEW HAMPSHIRE CONCORD       NJNEW JERSEY    TRENTON".
+           03  FILLER PIC X(60)
+               VALUE "NMNEW MEXICO    SANTA FE      NYNEW YORK      ALBANY".
+           03  FILLER PIC X(60)
+               VALUE "NCNORTH CAROLINARALEIGH       NDNORTH DAKOTA  BISMARCK".
+           03  FILLER PIC X(60)
+               VALUE "OHOHIO          COLUMBUS      OKOKLAHOMA      OKLAHOMA CITY".
+           03  FILLER PIC X(60)
+               VALUE "OROREGON        SALEM         PAPENNSYLVANIA  HARRISBURG".
+           03  FILLER PIC X(60)
+               VALUE "RIRHODE ISLAND  PROVIDENCE    SCSOUTH CAROLINACOLUMBIA".
+           03  FILLER PIC X(60)
+               VALUE "SDSOUTH DAKOTA  PIERRE        TNTENNESSEE     NASHVILLE".
+           03  FILLER PIC X(60)
+               VALUE "TXTEXAS         AUSTIN        UTUTAH          SALT LAKE CITY".
+           03  FILLER PIC X(60)
+               VALUE "VTVERMONT       MONTPELIER    VAVIRGINIA      RICHMOND".
+           03  FILLER PIC X(60)
+               VALUE "WAWASHINGTON    OLYMPIA       WVWEST VIRGINIA CHARLESTON".
+           03  FILLER PIC X(60)
+               VALUE "WIWISCONSIN     MADISON       WYWYOMING       CHEYENNE".
