@@ -50,27 +50,19 @@ states = [
 {"code" : "WI", "name" : "WISCONSIN", "capital" : "MADISON"},
 {"code" : "WY", "name" : "WYOMING", "capital" : "CHEYENNE"}]
 
+options = {'1' : ["code", "name", "capital"],
+           '2' : ["name", "code", "capital"],
+           '3' : ["capital", "code", "name",]
+}
+
+def stateExec(param):
+    name = input("input: ")
+    ret = next((item for item in states if item[param[0]] == name.upper()), None)
+    if ret is None:
+        print("state not found")
+    else:
+        print("state", param[1] , ret[param[1]], "state", param[2] , ret[param[2]])
 
 sel = input("search by 1 state code, 2 state name, 3 state capital: ")
 
-if sel == "1":
-    name = input("input state code: ")
-    ret = next((item for item in states if item["code"] == name.upper()), None)
-    if ret is None:
-        print("state not found")
-    else:
-        print("state name", ret["name"], "state capital", ret["capital"])
-elif sel == "2":
-    name = input("input state name: ")
-    ret = next((item for item in states if item["name"] == name.upper()), None)
-    if ret is None:
-        print("state not found")
-    else:
-        print("state code", ret["code"], "state capital", ret["capital"])
-elif sel == "3":
-    name = input("input state capital: ")
-    ret = next((item for item in states if item["capital"] == name.upper()), None)
-    if ret is None:
-        print("state not found")
-    else:
-        print("state code", ret["code"], "state name", ret["name"])
+stateExec(options[sel])
