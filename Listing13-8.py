@@ -7,36 +7,33 @@ for i in range(10):
 
 
 oddNumBtwZeros = False
-evenNumBtwZeros = False
-noneBtwZeros = False
-oneZero = False
-noZeros = False
 
+numBtwTheFirstTwoZeros = 0
+
+oneZero = False
+twoZeros = False
+noZeros = True
+
+
+# only valid for the first two zeros, other zeros interval are not evaluated
 for i, elem in enumerate(l):
-    if elem == '0':
+    if oneZero is False and elem == '0':
         oneZero = True
-    for j, elem2 in enumerate(l):
-        if elem2 == '0' and elem == '0' and j > i+1:
-            if (j-i+1)%2==0: 
-                evenNumBtwZeros = True
-                break
-            else: 
-                oddNumBtwZeros = True
-                break
-        elif elem2 == '0' and elem == '0' and j == i+1:
-            noneBtwZeros = True
-    if evenNumBtwZeros or oddNumBtwZeros:
+        noZeros = False
+    elif oneZero and elem != '0':
+        numBtwTheFirstTwoZeros += 1
+    elif oneZero and elem == '0':
+        oneZero = False
+        twoZeros = True
         break
 
-if oneZero == False:
-    noZeros = True
-
-if oddNumBtwZeros:
-    print("oddNumBtwZeros")
-elif evenNumBtwZeros:
-    print("evenNumBtwZeros")
-elif noneBtwZeros:
-    print("noneBtwZeros")
+if twoZeros:
+    if numBtwTheFirstTwoZeros == 0:
+        print("noneBtwZeros")
+    elif numBtwTheFirstTwoZeros % 2 == 0:
+        print("evenNumBtwZeros")
+    else:
+        print("oddNumBtwZeros")
 elif oneZero:
     print("one zero")
 elif noZeros:
